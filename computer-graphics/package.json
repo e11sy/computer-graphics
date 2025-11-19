@@ -1,0 +1,21 @@
+{
+  "name": "computer-graphics",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "wasm:build": "wasm-pack build wasm/geom-core --target web --release",
+    "wasm:watch": "wasm-pack build wasm/geom-core --target web --dev"
+  },
+  "dependencies": {
+    "naive-ui": "^2.43.1",
+    "vue": "^3.5.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.1.7"
+  }
+}
