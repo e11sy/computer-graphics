@@ -1,0 +1,7 @@
+jobs:
+  check-linked-issue:
+    uses: Kuchizu/CodeX-Assistant/.github/workflows/check-description.yml@main
+    with:
+      mode: strict
+    secrets:
+      PR_DRAFT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
