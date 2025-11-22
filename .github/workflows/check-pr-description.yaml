@@ -13,7 +13,6 @@ permissions:
 
 jobs:
   check-pr-description:
-    runs-on: ubuntu-latest
     uses: Kuchizu/CodeX-Assistant/.github/workflows/check-description.yml@main
     with:
       mode: comment
