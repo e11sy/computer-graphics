@@ -12,10 +12,11 @@ permissions:
   contents: read
 
 jobs:
-  check-linked-issue:
+  check-pr-description:
     runs-on: ubuntu-latest
     uses: Kuchizu/CodeX-Assistant/.github/workflows/check-description.yml@main
     with:
-      PR_DRAFT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       mode: comment
+    secrets:
+      PR_DRAFT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
