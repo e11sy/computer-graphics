@@ -15,6 +15,6 @@ jobs:
   check-linked-issue:
     uses: Kuchizu/CodeX-Assistant/.github/workflows/check-linked-issue.yml@main
     with:
-      mode: comment
+      mode: strict
     secrets:
       PR_DRAFT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
