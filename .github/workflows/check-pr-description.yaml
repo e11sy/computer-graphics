@@ -1,7 +1,14 @@
+on:
+  pull_request:
+    types:
+      - opened
+      - ready_for_review
+
 jobs:
   check-linked-issue:
+    runs-on: ubuntu-latest
     uses: Kuchizu/CodeX-Assistant/.github/workflows/check-description.yml@main
     with:
-      mode: strict
-    secrets:
       PR_DRAFT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      mode: comment
+
