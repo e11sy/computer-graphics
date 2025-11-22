@@ -1,8 +1,15 @@
+name: Check PR description
+
 on:
   pull_request:
     types:
       - opened
       - ready_for_review
+
+permissions:
+  pull-requests: write
+  issues: write
+  contents: read
 
 jobs:
   check-linked-issue:
